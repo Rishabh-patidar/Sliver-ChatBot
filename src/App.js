@@ -3,6 +3,10 @@ import "./App.css";
 
 function App() {
 
+  const [clientId, setClientId] = useState(
+    Math.floor(new Date().getTime() / 1000)
+  );
+  
   const [websckt, setWebsckt] = useState();
   const [message, setMessage] = useState([]);
   const [messages, setMessages] = useState([]);
